@@ -99,20 +99,20 @@ const Index = () => {
                   <Mail className="w-5 h-5 text-teak mr-3" />
                   <p className="text-sage-dark">info@goldenteak.com</p>
                 </div>
-                <div className="flex items-center">
-                  <Clock className="w-5 h-5 text-teak mr-3" />
+                <div className="flex items-start">
+                  <Clock className="w-5 h-5 text-teak mr-3 mt-1" />
                   <div className="text-sage-dark">
-                    <p>Mon-Fri: 11:00 AM - 10:00 PM</p>
-                    <p>Sat-Sun: 10:00 AM - 11:00 PM</p>
+                    <p>Monday - Thursday: 11:00 AM - 9:00 PM</p>
+                    <p>Friday - Saturday: 11:00 AM - 10:00 PM</p>
+                    <p>Sunday: 12:00 PM - 8:00 PM</p>
                   </div>
                 </div>
               </div>
               <div className="bg-cream p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-teak mb-4">Location</h3>
                 <p className="text-sage-dark">
-                  123 Culinary Street<br />
-                  Foodie District<br />
-                  New York, NY 10001
+                  500 16th Street<br />
+                  San Francisco, CA 94103
                 </p>
               </div>
             </div>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Calendar, Clock, MessageCircle } from "lucide-react";
+import { Calendar, Clock, MessageCircle, PhoneCall } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const ReservationWidget = () => {
@@ -19,6 +19,14 @@ const ReservationWidget = () => {
       description: "We'll get back to you soon!",
     });
     setIsOpen(false);
+  };
+
+  const handleCall = () => {
+    toast({
+      title: "Connecting to AI Support",
+      description: "Please wait while we connect you to our AI customer support.",
+    });
+    // AI call integration would go here
   };
 
   return (
@@ -74,6 +82,17 @@ const ReservationWidget = () => {
               Submit
             </Button>
           </form>
+
+          <div className="mt-4">
+            <Button
+              onClick={handleCall}
+              variant="outline"
+              className="w-full border-teak text-teak hover:bg-teak hover:text-white"
+            >
+              <PhoneCall className="w-4 h-4 mr-2" />
+              Talk to AI Support
+            </Button>
+          </div>
         </Card>
       ) : (
         <Button
