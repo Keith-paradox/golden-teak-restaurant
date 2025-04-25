@@ -2,7 +2,8 @@
 import Navigation from "@/components/Navigation";
 import MenuItem from "@/components/MenuItem";
 import ReservationWidget from "@/components/ReservationWidget";
-import { Phone, Mail, Clock, Book, Utensils } from "lucide-react";
+import OperatingHours from "@/components/OperatingHours";
+import { MapPin, Phone, Mail, Clock, Book, Utensils } from "lucide-react";
 
 const Index = () => {
   const specialties = [
@@ -43,7 +44,7 @@ const Index = () => {
             Golden Teak Restaurant
           </h1>
           <p className="text-lg md:text-xl text-sage-dark max-w-2xl mx-auto">
-            Experience the authentic flavors of Burma, where Chinese, Indian, and Thai influences create a unique and delicious culinary journey.
+            Experience the authentic flavors of Burma.
           </p>
         </div>
       </section>
@@ -82,14 +83,21 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 bg-teak/10">
+      {/* <section id="contact" className="py-16 px-4 bg-teak/10">
         <div className="container mx-auto">
           <div className="flex items-center justify-center mb-12">
             <Phone className="w-6 h-6 text-teak mr-2" />
             <h2 className="text-3xl font-bold text-sage">Contact Us</h2>
           </div>
           <div className="max-w-2xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="bg-cream p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-teak mb-4">Location</h3>
+                <p className="text-sage-dark">
+                  500 16th Street<br />
+                  San Francisco, CA 94103
+                </p>
+              </div>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-teak mr-3" />
@@ -102,23 +110,42 @@ const Index = () => {
                 <div className="flex items-start">
                   <Clock className="w-5 h-5 text-teak mr-3 mt-1" />
                   <div className="text-sage-dark">
-                    <p>Monday - Thursday: 11:00 AM - 9:00 PM</p>
-                    <p>Friday - Saturday: 11:00 AM - 10:00 PM</p>
-                    <p>Sunday: 12:00 PM - 8:00 PM</p>
+                    <p>Monday - Thursday:</p>
+                    <p>11:00AM - 9:00PM</p>
+                    <p>Friday - Saturday:</p>
+                    <p>11:00AM - 10:00PM</p>
+                    <p>Sunday:</p>
+                    <p>12:00PM - 8:00PM</p>
                   </div>
                 </div>
-              </div>
-              <div className="bg-cream p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-teak mb-4">Location</h3>
-                <p className="text-sage-dark">
-                  500 16th Street<br />
-                  San Francisco, CA 94103
-                </p>
               </div>
             </div>
           </div>
         </div>
+      </section> */}
+      <section id="contact" className="py-16 px-4 bg-teak/10">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <div className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-primary" />
+                <p className="text-lg">500 16th Street, San Francisco, CA 94103</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-primary" />
+                <p className="text-lg">+1 (555) 123-4567</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-primary" />
+                <p className="text-lg">info@goldenteak.com</p>
+              </div>
+            </div>
+            <OperatingHours />
+          </div>
+        </div>
       </section>
+
 
       <ReservationWidget />
     </div>

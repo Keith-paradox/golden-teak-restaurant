@@ -18,7 +18,7 @@ const Navigation = () => {
     <nav className="fixed w-full bg-cream/90 backdrop-blur-sm z-50 shadow-md">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-teak text-2xl font-bold">Golden Teak</div>
+          <div className="text-teak text-2xl font-bold">GOLDEN TEAK</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

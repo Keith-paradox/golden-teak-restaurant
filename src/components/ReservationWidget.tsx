@@ -42,27 +42,6 @@ const ReservationWidget = () => {
             </Button>
           </div>
 
-          <div className="space-x-2 mb-4">
-            <Button
-              variant={isReservation ? "default" : "outline"}
-              size="sm"
-              onClick={() => setIsReservation(true)}
-              className="bg-teak text-white hover:bg-teak-dark"
-            >
-              <Calendar className="w-4 h-4 mr-2" />
-              Reservation
-            </Button>
-            <Button
-              variant={!isReservation ? "default" : "outline"}
-              size="sm"
-              onClick={() => setIsReservation(false)}
-              className="bg-teak text-white hover:bg-teak-dark"
-            >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              Inquiry
-            </Button>
-          </div>
-
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input placeholder="Name" required />
             <Input type="email" placeholder="Email" required />
