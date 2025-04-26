@@ -11,12 +11,14 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Index = () => {
   const specialties = [
     {
       title: "Tea Leaf Salad (Lahpet Thoke)",
-      description: "A unique Burmese specialty made with fermented tea leaves, crunchy nuts, sesame seeds, tomatoes, and dried shrimp, creating a rich, tangy, and savory flavor."
+      description: "A unique Burmese specialty made with fermented tea leaves, crunchy nuts, sesame seeds, tomatoes, and dried shrimp, creating a rich, tangy, and savory flavor.",
+      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
     },
     {
       title: "Mohinga",
@@ -60,7 +62,8 @@ const Index = () => {
     },
     {
       title: "Nan Gyi Thoke",
-      description: "Thick rice noodles tossed with chicken curry, chickpea flour, coconut milk, and crispy toppings, served at room temperature."
+      description: "Thick rice noodles tossed with chicken curry, chickpea flour, coconut milk, and crispy toppings, served at room temperature.",
+      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a"
     }
   ];
 
@@ -73,7 +76,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1482938289607-e9573fc25ebb")',
+            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1466442929976-97f336a657be")',
             backgroundPosition: 'center',
           }}
         />
@@ -96,6 +99,15 @@ const Index = () => {
               {specialties.map((item, index) => (
                 <CarouselItem key={index} className="md:basis-1/3">
                   <Card className="h-full bg-cream-light hover:shadow-lg transition-shadow">
+                    <div className="relative w-full">
+                      <AspectRatio ratio={16/9}>
+                        <img 
+                          src={item.image} 
+                          alt={item.title}
+                          className="object-cover w-full h-full rounded-t-lg"
+                        />
+                      </AspectRatio>
+                    </div>
                     <CardHeader>
                       <CardTitle className="text-xl font-semibold text-teak">{item.title}</CardTitle>
                       <CardDescription className="text-sage-dark">{item.description}</CardDescription>
