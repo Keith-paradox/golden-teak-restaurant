@@ -69,14 +69,18 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 bg-gradient-to-b from-teak/10 to-cream-light">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-teak mb-4">
-            Golden Teak Restaurant
+      <section className="relative h-[60vh] flex items-center justify-center pt-24">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1482938289607-e9573fc25ebb")',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="relative container mx-auto text-center z-10">
+          <h1 className="text-4xl md:text-6xl font-bold text-cream mb-4">
+            Experience the authentic flavors of Burma
           </h1>
-          <p className="text-lg md:text-xl text-sage-dark max-w-2xl mx-auto">
-            Experience the authentic flavors of Burma.
-          </p>
         </div>
       </section>
 
