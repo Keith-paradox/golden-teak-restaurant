@@ -11,13 +11,13 @@ const OperatingHours = () => {
   return (
     <div className="space-y-3">
       <div className="flex items-center gap-2 text-primary mb-4">
-        <Clock className="w-5 h-5" />
-        <h3 className="font-semibold">Operating Hours</h3>
+        <Clock className="text-yellow-300 w-5 h-5" />
+        <h3 className="text-white font-semibold">Operating Hours</h3>
       </div>
       {hours.map((schedule) => (
         <div key={schedule.day} className="flex justify-between">
-          <span className="text-gray-700">{schedule.day}</span>
-          <span className="text-gray-600">{schedule.time}</span>
+          <span className="text-white">{schedule.day}</span>
+          <span className="text-white">{schedule.time}</span>
         </div>
       ))}
     </div>

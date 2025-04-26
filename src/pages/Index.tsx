@@ -18,52 +18,57 @@ const Index = () => {
     {
       title: "Tea Leaf Salad (Lahpet Thoke)",
       description: "A unique Burmese specialty made with fermented tea leaves, crunchy nuts, sesame seeds, tomatoes, and dried shrimp, creating a rich, tangy, and savory flavor.",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+      image: "src/images/Laphet-Thoke.jpg"
     },
     {
       title: "Mohinga",
-      description: "A beloved Burmese breakfast dish, this is a thick rice noodle soup in a savory fish broth with lemongrass, garlic, and banana stem, topped with crispy fritters."
+      description: "A beloved Burmese breakfast dish, this is a thick rice noodle soup in a savory fish broth with lemongrass, garlic, and banana stem, topped with crispy fritters.",
+      image: "src/images/Mohinga.jpg"
     },
     {
       title: "Shan Noodles",
-      description: "A flavorful noodle dish from the Shan region, featuring rice noodles with a rich tomato and garlic-based chicken or pork sauce, served with pickled mustard greens."
+      description: "A flavorful noodle dish from the Shan region, featuring rice noodles with a rich tomato and garlic-based chicken or pork sauce, served with pickled mustard greens.",
+      image: "src/images/Shan-Noodles.jpg"
     },
     {
       title: "Coconut Chicken Noodle Soup (Ohn No Khao Swe)",
-      description: "A comforting coconut milk-based noodle soup with tender chicken, boiled egg, and crispy fried noodles on top."
-    },
-    {
-      title: "Burmese Curries",
-      description: "Slow-cooked, fragrant curries served with rice and a variety of side dishes, offering a balance of spices, sweetness, and depth of flavor."
+      description: "A comforting coconut milk-based noodle soup with tender chicken, boiled egg, and crispy fried noodles on top.",
+      image: "src/images/Oh-Noh-KhoukSwl.jpg"
     },
     {
       title: "Palata & Dip",
-      description: "Flaky, buttery Burmese-style flatbread served with a sweet or savory dipping sauce, perfect as an appetizer or side dish."
-    },
-    {
-      title: "Myanmar Tea Shop Noodles",
-      description: "A popular breakfast dish featuring thin rice noodles in a light chicken broth, topped with crispy pork, fresh herbs, and chili oil."
+      description: "Flaky, buttery Burmese-style flatbread served with a sweet or savory dipping sauce, perfect as an appetizer or side dish.",
+      image: "src/images/Prata-Dip.jpg"
     },
     {
       title: "Shan Style Tofu Nway",
-      description: "A unique dish made with chickpea flour 'tofu' served in a warm, savory sauce with rice noodles, chili oil, and peanuts."
+      description: "A unique dish made with chickpea flour 'tofu' served in a warm, savory sauce with rice noodles, chili oil, and peanuts.",
+      image: "src/images/Tofu-Nway.jpg"
     },
     {
       title: "Burmese Samosas",
-      description: "Crispy triangular pastries filled with spiced potatoes, peas, and onions, served with a tangy tamarind dipping sauce."
+      description: "Crispy triangular pastries filled with spiced potatoes, peas, and onions, served with a tangy tamarind dipping sauce.",
+      image: "src/images/Samosa.jpg"
     },
     {
-      title: "Htamin Jin",
-      description: "A flavorful rice salad with flaked fish, shredded green beans, onions, and crispy fried garlic, dressed in fish sauce and lime."
+      title: "Shan Fish Rice (Ngar Htamin)",
+      description: "A flavorful rice salad with flaked fish, shredded green beans, onions, and crispy fried garlic, dressed in fish sauce and lime.",
+      image: "src/images/Nga-Htamin.jpg"
     },
     {
       title: "Kyay Oh",
-      description: "A hearty noodle soup with tender pork, meatballs, and vegetables in a clear broth, topped with garlic oil and crispy wontons."
+      description: "A hearty noodle soup with tender pork, meatballs, and vegetables in a clear broth, topped with garlic oil and crispy wontons.",
+      image: "src/images/Kyay-Oh.jpg"
+    },
+    {
+      title: "Nan Pyar Thoke",
+      description: "A popular breakfast dish featuring thin flat rice noodles in a light chicken broth, topped with crispy pork, fresh herbs, and chili oil.",
+      image: "src/images/Nan-Pyar-Thoke.jpg"
     },
     {
       title: "Nan Gyi Thoke",
       description: "Thick rice noodles tossed with chicken curry, chickpea flour, coconut milk, and crispy toppings, served at room temperature.",
-      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a"
+      image: "src/images/Nan-Gyi-Thoke.jpg"
     }
   ];
 
@@ -76,13 +81,13 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1466442929976-97f336a657be")',
+            backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://themindfulpeanut.com/wp-content/uploads/2022/05/saladheader.jpg")',
             backgroundPosition: 'center',
           }}
         />
         <div className="relative container mx-auto text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-cream mb-4">
-            Experience the authentic flavors of Burma
+            Experience the taste of Burmese Tradition
           </h1>
         </div>
       </section>
@@ -91,13 +96,13 @@ const Index = () => {
       <section id="menu" className="py-16 px-4 bg-cream">
         <div className="container mx-auto">
           <div className="flex items-center justify-center mb-12">
-            <Utensils className="w-6 h-6 text-teak mr-2" />
-            <h2 className="text-3xl font-bold text-sage">Our Specialties</h2>
+            <Utensils className="w-6 h-6 text-yellow-500 mr-2" />
+            <h2 className="text-3xl font-bold text-amber-900">Our Specialties</h2>
           </div>
           <Carousel className="w-full max-w-5xl mx-auto">
             <CarouselContent>
               {specialties.map((item, index) => (
-                <CarouselItem key={index} className="md:basis-1/3">
+                <CarouselItem key={index} className="md:basis-1/4">
                   <Card className="h-full bg-cream-light hover:shadow-lg transition-shadow">
                     <div className="relative w-full">
                       <AspectRatio ratio={16/9}>
@@ -125,17 +130,17 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 bg-sage/5">
+      <section id="about" className="py-16 px-4 bg-[#A7845A]">
         <div className="container mx-auto">
           <div className="flex items-center justify-center mb-12">
-            <Book className="w-6 h-6 text-teak mr-2" />
-            <h2 className="text-3xl font-bold text-sage">Our Story</h2>
+            <Book className="w-6 h-6 text-yellow-500 mr-2" />
+            <h2 className="text-3xl font-bold text-white">Our Story</h2>
           </div>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg text-sage-dark mb-6">
+            <p className="text-lg text-white mb-6">
               Welcome to Golden Teak, where we bring the authentic flavors of Burma to your table. Our cuisine is a delicious blend of flavors influenced by Chinese, Indian, and Thai cooking, featuring bold spices, fermented ingredients, and fresh herbs.
             </p>
-            <p className="text-lg text-sage-dark">
+            <p className="text-lg text-white">
               Each dish is carefully prepared by our expert chefs who maintain the traditional cooking methods while adding their own contemporary twist. We're proud to share our cultural heritage through our food.
             </p>
           </div>
@@ -143,22 +148,22 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 bg-teak/10">
+      <section id="contact" className="py-16 px-4 bg-[#5A290F]/85">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
+          <h2 className="text-white text-3xl font-bold text-center mb-12">Contact Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-primary" />
-                <p className="text-lg">500 16th Street, San Francisco, CA 94103</p>
+                <MapPin className="w-5 h-5 text-yellow-500" />
+                <p className="text-white text-lg">500 16th Street, San Francisco, CA 94103</p>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary" />
-                <p className="text-lg">+1 (555) 123-4567</p>
+                <Phone className="w-5 h-5 text-yellow-500" />
+                <p className="text-white text-lg">+1 (555) 123-4567</p>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary" />
-                <p className="text-lg">info@goldenteak.com</p>
+                <Mail className="w-5 h-5 text-yellow-500" />
+                <p className="text-white text-lg">info@goldenteak.com</p>
               </div>
             </div>
             <OperatingHours />

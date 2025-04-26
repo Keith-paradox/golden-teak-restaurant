@@ -15,20 +15,20 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-cream/90 backdrop-blur-sm z-50 shadow-md">
+    <nav className="fixed w-full bg-[#5A290F]/95 backdrop-blur-sm z-50 shadow-md">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="text-teak text-2xl font-bold">GOLDEN TEAK</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('menu')} className="text-sage hover:text-teak transition-colors">
+            <button onClick={() => scrollToSection('menu')} className="text-teak hover:text-white transition-colors">
               Menu
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-sage hover:text-teak transition-colors">
+            <button onClick={() => scrollToSection('about')} className="text-teak hover:text-white transition-colors">
               About
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-sage hover:text-teak transition-colors">
+            <button onClick={() => scrollToSection('contact')} className="text-teak hover:text-white transition-colors">
               Contact
             </button>
           </div>
