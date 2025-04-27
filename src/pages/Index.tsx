@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
 import MenuItem from "@/components/MenuItem";
-import ReservationWidget from "@/components/ReservationWidget";
 import OperatingHours from "@/components/OperatingHours";
 import { MapPin, Phone, Mail, Clock, Book, Utensils } from "lucide-react";
 import {
@@ -147,6 +146,7 @@ const Index = () => {
         </div>
       </section>
 
+
       {/* Contact Section */}
       <section id="contact" className="py-16 px-4 bg-[#5A290F]/85">
         <div className="max-w-7xl mx-auto">
@@ -171,7 +171,8 @@ const Index = () => {
         </div>
       </section>
 
-      <ReservationWidget />
+      {/* Removed ReservationWidget */}
+      {/* <ReservationWidget /> */}
     </div>
   );
 };
