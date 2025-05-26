@@ -11,63 +11,74 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import kyay_oh from "@/images/Kyay-Oh.jpg";
+import laphet_thoke from "@/images/Laphet-Thoke.jpg";
+import mohinga from "@/images/Mohinga.jpg";
+import nga_htamin from "@/images/Nga-Htamin.jpg"
+import nan_gyi_thoke from "@/images/Nan-Gyi-Thoke.jpg";
+import nan_pyar_thoke from "@/images/Nan-Pyar-Thoke.jpg";
+import oh_noh_khoukswl from "@/images/Oh-Noh-KhoukSwl.jpg";
+import prata_dip from "@/images/Prata-Dip.jpg";
+import samosa from "@/images/Samosa.jpg";
+import shan_noodle from "@/images/Shan-Noodles.jpg";
+import tofu_nway from "@/images/Tofu-Nway.jpg";
 
 const Index = () => {
   const specialties = [
     {
       title: "Tea Leaf Salad (Lahpet Thoke)",
       description: "A unique Burmese specialty made with fermented tea leaves, crunchy nuts, sesame seeds, tomatoes, and dried shrimp, creating a rich, tangy, and savory flavor.",
-      image: "src/images/Laphet-Thoke.jpg"
+      image: laphet_thoke
     },
     {
       title: "Mohinga",
       description: "A beloved Burmese breakfast dish, this is a thick rice noodle soup in a savory fish broth with lemongrass, garlic, and banana stem, topped with crispy fritters.",
-      image: "src/images/Mohinga.jpg"
+      image: mohinga
     },
     {
       title: "Shan Noodles",
       description: "A flavorful noodle dish from the Shan region, featuring rice noodles with a rich tomato and garlic-based chicken or pork sauce, served with pickled mustard greens.",
-      image: "src/images/Shan-Noodles.jpg"
+      image: shan_noodle
     },
     {
       title: "Coconut Chicken Noodle Soup (Ohn No Khao Swe)",
       description: "A comforting coconut milk-based noodle soup with tender chicken, boiled egg, and crispy fried noodles on top.",
-      image: "src/images/Oh-Noh-KhoukSwl.jpg"
+      image: oh_noh_khoukswl
     },
     {
       title: "Palata & Dip",
       description: "Flaky, buttery Burmese-style flatbread served with a sweet or savory dipping sauce, perfect as an appetizer or side dish.",
-      image: "src/images/Prata-Dip.jpg"
+      image: prata_dip
     },
     {
       title: "Shan Style Tofu Nway",
       description: "A unique dish made with chickpea flour 'tofu' served in a warm, savory sauce with rice noodles, chili oil, and peanuts.",
-      image: "src/images/Tofu-Nway.jpg"
+      image: tofu_nway
     },
     {
       title: "Burmese Samosas",
       description: "Crispy triangular pastries filled with spiced potatoes, peas, and onions, served with a tangy tamarind dipping sauce.",
-      image: "src/images/Samosa.jpg"
+      image: samosa
     },
     {
       title: "Shan Fish Rice (Ngar Htamin)",
       description: "A flavorful rice salad with flaked fish, shredded green beans, onions, and crispy fried garlic, dressed in fish sauce and lime.",
-      image: "src/images/Nga-Htamin.jpg"
+      image: nga_htamin
     },
     {
       title: "Kyay Oh",
       description: "A hearty noodle soup with tender pork, meatballs, and vegetables in a clear broth, topped with garlic oil and crispy wontons.",
-      image: "src/images/Kyay-Oh.jpg"
+      image: kyay_oh
     },
     {
       title: "Nan Pyar Thoke",
       description: "A popular breakfast dish featuring thin flat rice noodles in a light chicken broth, topped with crispy pork, fresh herbs, and chili oil.",
-      image: "src/images/Nan-Pyar-Thoke.jpg"
+      image: nan_pyar_thoke
     },
     {
       title: "Nan Gyi Thoke",
       description: "Thick rice noodles tossed with chicken curry, chickpea flour, coconut milk, and crispy toppings, served at room temperature.",
-      image: "src/images/Nan-Gyi-Thoke.jpg"
+      image: nan_gyi_thoke
     }
   ];
 
