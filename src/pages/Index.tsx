@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import MenuItem from "@/components/MenuItem";
 import OperatingHours from "@/components/OperatingHours";
@@ -125,7 +124,7 @@ const Index = () => {
             <CarouselContent>
               {specialties.map((item, index) => (
                 <CarouselItem key={index} className="md:basis-1/4">
-                  <Card className="h-full bg-cream-light hover:shadow-lg transition-shadow">
+                  <Card className="h-full bg-cream-light hover:shadow-lg transition-shadow flex flex-col">
                     <div className="relative w-full">
                       <AspectRatio ratio={16/9}>
                         <img 
@@ -135,12 +134,10 @@ const Index = () => {
                         />
                       </AspectRatio>
                     </div>
-                    <CardHeader className="pb-2">
+                    <CardHeader className="pb-2 flex-grow flex flex-col">
                       <CardTitle className="text-xl font-semibold text-teak">{item.title}</CardTitle>
-                      <CardDescription className="text-sage-dark">{item.description}</CardDescription>
-                      <div className="pt-2 border-t border-sage-light mt-2">
-                        <span className="text-lg font-bold text-teak">{item.price}</span>
-                      </div>
+                      <span className="text-lg font-bold text-burgundy text-right">{item.price}</span>
+                      <CardDescription className="text-sage-dark flex-grow">{item.description}</CardDescription>
                     </CardHeader>
                   </Card>
                 </CarouselItem>
