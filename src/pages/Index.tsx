@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import MenuItem from "@/components/MenuItem";
 import OperatingHours from "@/components/OperatingHours";
@@ -28,57 +29,68 @@ const Index = () => {
     {
       title: "Tea Leaf Salad (Lahpet Thoke)",
       description: "A unique Burmese specialty made with fermented tea leaves, crunchy nuts, sesame seeds, tomatoes, and dried shrimp, creating a rich, tangy, and savory flavor.",
-      image: laphet_thoke
+      image: laphet_thoke,
+      price: "$12.95"
     },
     {
       title: "Mohinga",
       description: "A beloved Burmese breakfast dish, this is a thick rice noodle soup in a savory fish broth with lemongrass, garlic, and banana stem, topped with crispy fritters.",
-      image: mohinga
+      image: mohinga,
+      price: "$14.95"
     },
     {
       title: "Shan Noodles",
       description: "A flavorful noodle dish from the Shan region, featuring rice noodles with a rich tomato and garlic-based chicken or pork sauce, served with pickled mustard greens.",
-      image: shan_noodle
+      image: shan_noodle,
+      price: "$13.95"
     },
     {
       title: "Coconut Chicken Noodle Soup (Ohn No Khao Swe)",
       description: "A comforting coconut milk-based noodle soup with tender chicken, boiled egg, and crispy fried noodles on top.",
-      image: oh_noh_khoukswl
+      image: oh_noh_khoukswl,
+      price: "$15.95"
     },
     {
       title: "Palata & Dip",
       description: "Flaky, buttery Burmese-style flatbread served with a sweet or savory dipping sauce, perfect as an appetizer or side dish.",
-      image: prata_dip
+      image: prata_dip,
+      price: "$8.95"
     },
     {
       title: "Shan Style Tofu Nway",
       description: "A unique dish made with chickpea flour 'tofu' served in a warm, savory sauce with rice noodles, chili oil, and peanuts.",
-      image: tofu_nway
+      image: tofu_nway,
+      price: "$11.95"
     },
     {
       title: "Burmese Samosas",
       description: "Crispy triangular pastries filled with spiced potatoes, peas, and onions, served with a tangy tamarind dipping sauce.",
-      image: samosa
+      image: samosa,
+      price: "$7.95"
     },
     {
       title: "Shan Fish Rice (Ngar Htamin)",
       description: "A flavorful rice salad with flaked fish, shredded green beans, onions, and crispy fried garlic, dressed in fish sauce and lime.",
-      image: nga_htamin
+      image: nga_htamin,
+      price: "$13.95"
     },
     {
       title: "Kyay Oh",
       description: "A hearty noodle soup with tender pork, meatballs, and vegetables in a clear broth, topped with garlic oil and crispy wontons.",
-      image: kyay_oh
+      image: kyay_oh,
+      price: "$16.95"
     },
     {
       title: "Nan Pyar Thoke",
       description: "A popular breakfast dish featuring thin flat rice noodles in a light chicken broth, topped with crispy pork, fresh herbs, and chili oil.",
-      image: nan_pyar_thoke
+      image: nan_pyar_thoke,
+      price: "$12.95"
     },
     {
       title: "Nan Gyi Thoke",
       description: "Thick rice noodles tossed with chicken curry, chickpea flour, coconut milk, and crispy toppings, served at room temperature.",
-      image: nan_gyi_thoke
+      image: nan_gyi_thoke,
+      price: "$14.95"
     }
   ];
 
@@ -123,9 +135,12 @@ const Index = () => {
                         />
                       </AspectRatio>
                     </div>
-                    <CardHeader>
+                    <CardHeader className="pb-2">
                       <CardTitle className="text-xl font-semibold text-teak">{item.title}</CardTitle>
                       <CardDescription className="text-sage-dark">{item.description}</CardDescription>
+                      <div className="pt-2 border-t border-sage-light mt-2">
+                        <span className="text-lg font-bold text-teak">{item.price}</span>
+                      </div>
                     </CardHeader>
                   </Card>
                 </CarouselItem>
