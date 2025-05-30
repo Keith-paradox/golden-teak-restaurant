@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import MenuItem from "@/components/MenuItem";
 import OperatingHours from "@/components/OperatingHours";
@@ -136,8 +137,10 @@ const Index = () => {
                     </div>
                     <CardHeader className="pb-2 flex-grow flex flex-col">
                       <CardTitle className="text-xl font-semibold text-teak">{item.title}</CardTitle>
-                      <span className="text-lg font-bold text-burgundy text-right">{item.price}</span>
-                      <CardDescription className="text-sage-dark flex-grow">{item.description}</CardDescription>
+                      <CardDescription className="text-sage-dark flex-grow mb-4">{item.description}</CardDescription>
+                      <div className="mt-auto">
+                        <span className="text-lg font-bold text-burgundy">{item.price}</span>
+                      </div>
                     </CardHeader>
                   </Card>
                 </CarouselItem>
