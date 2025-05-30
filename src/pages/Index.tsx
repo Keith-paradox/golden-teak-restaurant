@@ -137,10 +137,10 @@ const Index = () => {
                     </div>
                     <CardHeader className="pb-2">
                       <CardTitle className="text-xl font-semibold text-teak">{item.title}</CardTitle>
-                      <div className="py-1">
+                      <CardDescription className="text-sage-dark">{item.description}</CardDescription>
+                      <div className="pt-2 border-t border-sage-light mt-2">
                         <span className="text-lg font-bold text-teak">{item.price}</span>
                       </div>
-                      <CardDescription className="text-sage-dark">{item.description}</CardDescription>
                     </CardHeader>
                   </Card>
                 </CarouselItem>
