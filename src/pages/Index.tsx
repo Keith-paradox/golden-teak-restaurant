@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import MenuItem from "@/components/MenuItem";
 import OperatingHours from "@/components/OperatingHours";
@@ -11,62 +12,85 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import kyay_oh from "@/images/Kyay-Oh.jpg";
+import laphet_thoke from "@/images/Laphet-Thoke.jpg";
+import mohinga from "@/images/Mohinga.jpg";
+import nga_htamin from "@/images/Nga-Htamin.jpg"
+import nan_gyi_thoke from "@/images/Nan-Gyi-Thoke.jpg";
+import nan_pyar_thoke from "@/images/Nan-Pyar-Thoke.jpg";
+import oh_noh_khoukswl from "@/images/Oh-Noh-KhoukSwl.jpg";
+import prata_dip from "@/images/Prata-Dip.jpg";
+import samosa from "@/images/Samosa.jpg";
+import shan_noodle from "@/images/Shan-Noodles.jpg";
+import tofu_nway from "@/images/Tofu-Nway.jpg";
 
 const Index = () => {
   const specialties = [
     {
-      title: "Masala Dosa",
-      description: "Crispy rice crepe filled with spiced potato, served with coconut chutney and sambar.",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop",
-      price: "$8.99"
+      title: "Tea Leaf Salad (Lahpet Thoke)",
+      description: "A unique Burmese specialty made with fermented tea leaves, crunchy nuts, sesame seeds, tomatoes, and dried shrimp, creating a rich, tangy, and savory flavor.",
+      image: laphet_thoke,
+      price: "$12.95"
     },
     {
-      title: "Idli with Sambar",
-      description: "Steamed rice cakes served with lentil-based sambar and coconut chutney.",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop",
-      price: "$6.99"
+      title: "Mohinga",
+      description: "A beloved Burmese breakfast dish, this is a thick rice noodle soup in a savory fish broth with lemongrass, garlic, and banana stem, topped with crispy fritters.",
+      image: mohinga,
+      price: "$14.95"
     },
     {
-      title: "Medu Vada",
-      description: "Crispy savory lentil doughnuts served with sambar and chutney.",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop",
-      price: "$7.50"
+      title: "Shan Noodles",
+      description: "A flavorful noodle dish from the Shan region, featuring rice noodles with a rich tomato and garlic-based chicken or pork sauce, served with pickled mustard greens.",
+      image: shan_noodle,
+      price: "$13.95"
     },
     {
-      title: "Uttapam",
-      description: "Thick savory pancake topped with onions, tomatoes, and chilies, served with chutney.",
-      image: "https://images.unsplash.com/photo-1501286353178-1ec881214838?w=400&h=300&fit=crop",
-      price: "$9.50"
+      title: "Coconut Chicken Noodle Soup (Ohn No Khao Swe)",
+      description: "A comforting coconut milk-based noodle soup with tender chicken, boiled egg, and crispy fried noodles on top.",
+      image: oh_noh_khoukswl,
+      price: "$15.95"
     },
     {
-      title: "Pongal",
-      description: "Creamy rice and lentil porridge seasoned with pepper, cumin, and ghee.",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop",
-      price: "$7.99"
+      title: "Palata & Dip",
+      description: "Flaky, buttery Burmese-style flatbread served with a sweet or savory dipping sauce, perfect as an appetizer or side dish.",
+      image: prata_dip,
+      price: "$8.95"
     },
     {
-      title: "Vegetable Biryani",
-      description: "Fragrant basmati rice cooked with mixed vegetables and aromatic spices.",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop",
-      price: "$12.99"
+      title: "Shan Style Tofu Nway",
+      description: "A unique dish made with chickpea flour 'tofu' served in a warm, savory sauce with rice noodles, chili oil, and peanuts.",
+      image: tofu_nway,
+      price: "$11.95"
     },
     {
-      title: "Rasam",
-      description: "Spicy and tangy South Indian soup made with tamarind, tomatoes, and spices.",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop",
-      price: "$5.99"
+      title: "Burmese Samosas",
+      description: "Crispy triangular pastries filled with spiced potatoes, peas, and onions, served with a tangy tamarind dipping sauce.",
+      image: samosa,
+      price: "$7.95"
     },
     {
-      title: "Appam with Stew",
-      description: "Soft fermented rice pancakes served with coconut vegetable stew.",
-      image: "https://images.unsplash.com/photo-1501286353178-1ec881214838?w=400&h=300&fit=crop",
-      price: "$10.50"
+      title: "Shan Fish Rice (Ngar Htamin)",
+      description: "A flavorful rice salad with flaked fish, shredded green beans, onions, and crispy fried garlic, dressed in fish sauce and lime.",
+      image: nga_htamin,
+      price: "$13.95"
     },
     {
-      title: "Filter Coffee",
-      description: "Traditional South Indian coffee brewed with chicory and served with frothy milk.",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop",
-      price: "$4.50"
+      title: "Kyay Oh",
+      description: "A hearty noodle soup with tender pork, meatballs, and vegetables in a clear broth, topped with garlic oil and crispy wontons.",
+      image: kyay_oh,
+      price: "$16.95"
+    },
+    {
+      title: "Nan Pyar Thoke",
+      description: "A popular breakfast dish featuring thin flat rice noodles in a light chicken broth, topped with crispy pork, fresh herbs, and chili oil.",
+      image: nan_pyar_thoke,
+      price: "$12.95"
+    },
+    {
+      title: "Nan Gyi Thoke",
+      description: "Thick rice noodles tossed with chicken curry, chickpea flour, coconut milk, and crispy toppings, served at room temperature.",
+      image: nan_gyi_thoke,
+      price: "$14.95"
     }
   ];
 
@@ -85,7 +109,7 @@ const Index = () => {
         />
         <div className="relative container mx-auto text-center z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-cream mb-4">
-            Experience the taste of South Indian Tradition
+            Experience the taste of Burmese Tradition
           </h1>
         </div>
       </section>
@@ -139,14 +163,15 @@ const Index = () => {
           </div>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-white mb-6">
-              Welcome to Golden Teak, where we bring the authentic flavors of South India to your table. Our cuisine features traditional recipes passed down through generations, showcasing the rich culinary heritage of South Indian states.
+              Welcome to Golden Teak, where we bring the authentic flavors of Burma to your table. Our cuisine is a delicious blend of flavors influenced by Chinese, Indian, and Thai cooking, featuring bold spices, fermented ingredients, and fresh herbs.
             </p>
             <p className="text-lg text-white">
-              Each dish is carefully prepared by our expert chefs who maintain the traditional cooking methods while using the finest ingredients. We're proud to share our cultural heritage through our authentic South Indian cuisine.
+              Each dish is carefully prepared by our expert chefs who maintain the traditional cooking methods while adding their own contemporary twist. We're proud to share our cultural heritage through our food.
             </p>
           </div>
         </div>
       </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-16 px-4 bg-[#5A290F]/85">
