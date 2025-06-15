@@ -215,8 +215,13 @@
     </div>
 
     <!-- Chat Widget Script -->
+
+    <!-- Session ID Reset -->
     <script>
-      sessionStorage.removeItem("chatId");
+    sessionStorage.removeItem("chatId");
+    </script>
+
+    <script>
       window.ChatWidgetConfig = {
         webhook: {
           url: "https://n8n.8genticai.de/webhook/a79790d8-d34a-4bcc-9afa-9ace28eead0a/chat",
@@ -233,11 +238,13 @@
 
       // Function to generate or retrieve a unique chat ID
       function getChatId() {
-        const chatId = "chat_" + Math.random().toString(36).substr(2, 9);
-        sessionStorage.setItem("chatId", chatId);
+        let chatId = sessionStorage.getItem("chatId");
+        if (!chatId) {
+          chatId = "chat_" + Math.random().toString(36).substr(2, 9); // Unique ID
+          sessionStorage.setItem("chatId", chatId);
+        }
         return chatId;
       }
-
 
       // Show chat widget and hide bubble
       document
