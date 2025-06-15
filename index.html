@@ -233,13 +233,11 @@
 
       // Function to generate or retrieve a unique chat ID
       function getChatId() {
-        let chatId = sessionStorage.getItem("chatId");
-        if (!chatId) {
-          chatId = "chat_" + Math.random().toString(36).substr(2, 9); // Unique ID
-          sessionStorage.setItem("chatId", chatId);
-        }
+        const chatId = "chat_" + Math.random().toString(36).substr(2, 9);
+        sessionStorage.setItem("chatId", chatId);
         return chatId;
       }
+
 
       // Show chat widget and hide bubble
       document
